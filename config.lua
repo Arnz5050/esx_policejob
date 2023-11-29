@@ -44,27 +44,27 @@ Config.PoliceStations = {
 			vector3(451.7, -980.1, 30.6)
 		},
 
-		Vehicles = {
-			{
-				Spawner = vector3(454.6, -1017.4, 28.4),
-				InsideShop = vector3(228.5, -993.5, -99.5),
-				SpawnPoints = {
-					{coords = vector3(438.4, -1018.3, 27.7), heading = 90.0, radius = 6.0},
-					{coords = vector3(441.0, -1024.2, 28.3), heading = 90.0, radius = 6.0},
-					{coords = vector3(453.5, -1022.2, 28.0), heading = 90.0, radius = 6.0},
-					{coords = vector3(450.9, -1016.5, 28.1), heading = 90.0, radius = 6.0}
-				}
-			},
-
-			{
-				Spawner = vector3(473.3, -1018.8, 28.0),
-				InsideShop = vector3(228.5, -993.5, -99.0),
-				SpawnPoints = {
-					{coords = vector3(475.9, -1021.6, 28.0), heading = 276.1, radius = 6.0},
-					{coords = vector3(484.1, -1023.1, 27.5), heading = 302.5, radius = 6.0}
-				}
-			}
-		},
+		--Vehicles = {
+		--	{
+		--		Spawner = vector3(454.6, -1017.4, 28.4),
+		--		InsideShop = vector3(228.5, -993.5, -99.5),
+		--		SpawnPoints = {
+		--			{coords = vector3(438.4, -1018.3, 27.7), heading = 90.0, radius = 6.0},
+		--			{coords = vector3(441.0, -1024.2, 28.3), heading = 90.0, radius = 6.0},
+		--			{coords = vector3(453.5, -1022.2, 28.0), heading = 90.0, radius = 6.0},
+		--			{coords = vector3(450.9, -1016.5, 28.1), heading = 90.0, radius = 6.0}
+		--		}
+		--	},
+		--
+		--	{
+		--		Spawner = vector3(473.3, -1018.8, 28.0),
+		--		InsideShop = vector3(228.5, -993.5, -99.0),
+		--		SpawnPoints = {
+		--			{coords = vector3(475.9, -1021.6, 28.0), heading = 276.1, radius = 6.0},
+		--			{coords = vector3(484.1, -1023.1, 27.5), heading = 302.5, radius = 6.0}
+		--		}
+		--	}
+		--},
 
 		Helicopters = {
 			{
@@ -129,25 +129,25 @@ Config.AuthorizedWeapons = {
 }
 
 Config.AuthorizedVehicles = {
-	car = {
-		recruit = {},
-
-		officer = {
-			{model = 'police3', price = 20000}
-		},
-
-		sergeant = {
-			{model = 'policet', price = 18500},
-			{model = 'policeb', price = 30500}
-		},
-
-		lieutenant = {
-			{model = 'riot', price = 70000},
-			{model = 'fbi2', price = 60000}
-		},
-
-		boss = {}
-	},
+	--car = {
+	--	recruit = {},
+	--
+	--	officer = {
+	--		{model = 'police3', price = 20000}
+	--	},
+	--
+	--	sergeant = {
+	--		{model = 'policet', price = 18500},
+	--		{model = 'policeb', price = 30500}
+	--	},
+	--
+	--	lieutenant = {
+	--		{model = 'riot', price = 70000},
+	--		{model = 'fbi2', price = 60000}
+	--	},
+	--
+	--	boss = {}
+	--},
 
 	helicopter = {
 		recruit = {},
@@ -329,4 +329,28 @@ Config.Uniforms = {
 			tshirt_1 = 36,  tshirt_2 = 1
 		}
 	}
+}
+
+
+
+Config.MenuMarker = {Type = 1, r = 0, g = 255, b = 0, x = 1.5, y = 1.5, z = 1.0} -- Enter Location Marker Settings.
+Config.DelMarker = {Type = 1, r = 255, g = 0, b = 0, x = 5.0, y = 5.0, z = 1.0} -- Delete Location Marker Settings.
+
+Config.Zones = {
+	VehicleSpawner1 = { 
+		Pos = vector3(424, -1012, 28), -- Enter Marker
+		Loc = vector3(439, -1018, 28), -- Spawn Location
+		Del = vector3(426, -1027, 28), -- Delete Location
+		Heading = 96.37
+	}
+}
+
+Config.Vehicles = {
+	{model = 'police', label = 'Police Car 1'},
+	{model = 'fbi2', label = 'FBI 2'},
+}
+
+Config.ListedVehicles = {
+	'police',
+	'fbi2',
 }
